@@ -26,8 +26,6 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
-#include "system_version.h"
-
 #ifdef SPARK_PLATFORM
 #include "platform_headers.h"
 #endif
@@ -48,7 +46,6 @@
 #include "spark_wiring_wifi.h"
 #include "spark_wiring_network.h"
 #include "spark_wiring_client.h"
-#include "spark_wiring_startup.h"
 #include "spark_wiring_tcpclient.h"
 #include "spark_wiring_tcpserver.h"
 #include "spark_wiring_udp.h"
@@ -59,8 +56,7 @@
 #include "spark_wiring_thread.h"
 #include "fast_pin.h"
 #include "string_convert.h"
-#include "debug_output_handler.h"
-
+#include "NCD4Relay.h"
 // this was being implicitly pulled in by some of the other headers
 // adding here for backwards compatibility.
 #include "system_task.h"
